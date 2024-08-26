@@ -1,9 +1,14 @@
-//creating and adding ht e h1 element
+//creating and adding h1 element
 const text = document.createElement("h1");
-//Adding texty to h1
+//Adding text to h1
 text.textContent = "myText";
+text.id = "myText";
 //Append the h1 to the body
 document.body.appendChild(text);
+
+button.addEventListener("click", function(){
+    
+})
 
 
 
