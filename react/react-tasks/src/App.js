@@ -2,6 +2,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import Greeting from './components/Greeting';
+import "./styles/greeting.css"
 
 function App() {
     const [name, setName] = useState('');
@@ -19,7 +20,7 @@ function App() {
 
     return (
       <div className="App">
-      <h1>Greeting App</h1>
+      <h1 className='greeting'>Greeting App</h1>
       <form onSubmit={handleSubmit}>
           <input 
               type="text" 
