@@ -3,7 +3,7 @@ import './App.css';
 import React from 'react';
 
 import "./styles/greeting.css"
-import Greeting from "./components/Greeting"
+import Greeting from "./components/Task 1/Greeting"
 import "./App.css"
 
 function App() {
