@@ -4,10 +4,17 @@ async function fetchTodos() {
     try{
 const response = await fetch("https://jsonplaceholder.typicode.com/todos")
 if (response.ok){
-    const data = await response.json(); //conveting response to json
+    const todos = await response.json(); //conveting response to json
+
+    //To get first five todos from data
+    const firstFiveTodos = todos.slice(0, 5);
+    console.log(firstFiveTodos)
+}
+else {
+    throw new Error('Bad Network response');
 }
     }
     catch{
-
+        console.error('fetch Data Error:', error);
     }
 }
