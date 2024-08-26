@@ -4,4 +4,25 @@ body{
     align-items: center;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 100px;
+    background-color: bisque
+}
+
+#myText{
+    color:rgb(111, 56, 111) ; 
+    margin: 25px;
+}
+
+#changeTextButton{
+    padding: 10px 20px; 
+    font-size: 16px;
+    border-radius:5px;
+   color:#fff;
+   background-color: grey;
+}
+
+#changeTextButton:disabled {
+    background-color: #d3d3d3; 
+    color: #a9a9a9; 
+    cursor: not-allowed;
 }
