@@ -6,11 +6,6 @@ text.id = "myText";
 //Append the h1 to the body
 document.body.appendChild(text);
 
-button.addEventListener("click", function(){
-    
-})
-
-
 
 //creating and adding button element
 const button = document.createElement("button");
@@ -18,4 +13,10 @@ const button = document.createElement("button");
 button.textContent = "Change Text";
 //Append the button to the body
 document.body.appendChild(button);
+
+
+button.addEventListener("click", function(){
+    const changeTextElement = document.getElementById("myText");
+    changeTextElement.textContent ="Hello, Check!"
+})
 
