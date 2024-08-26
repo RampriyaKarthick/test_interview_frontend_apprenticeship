@@ -22,3 +22,13 @@ button.addEventListener("click", function(){
     button.disabled = true;
 })
 
+//if button needs to toggle between the text "myText" and "Hello, Check", comment the above EL for button and the following EL can be used
+// button.addEventListener("click", function(){
+//     const changeTextElement = document.getElementById("myText");
+//     if (changeTextElement.textContent === "myText") {
+//         changeTextElement.textContent = "Hello, Check!";
+//     } else {
+//         changeTextElement.textContent = "myText";
+//     }
+// })
+
