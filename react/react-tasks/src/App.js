@@ -12,6 +12,7 @@ function App() {
 
     return (
         <div className="App">
+        <h1>Greeting App</h1>
             <input 
                 type="text" 
                 value={name} 

@@ -1,9 +1,10 @@
 import React from 'react'
 
-function Greeting() {
+const Greeting = ({ name }) => {
   return (
-    <div>Greeting</div>
-  )
-}
-
+      <div>
+          {name && <h1>Hello, {name}!</h1>}
+      </div>
+  );
+};
 export default Greeting
