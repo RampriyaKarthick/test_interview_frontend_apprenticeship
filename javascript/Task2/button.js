@@ -11,12 +11,14 @@ document.body.appendChild(text);
 const button = document.createElement("button");
 //Adding texty to the button
 button.textContent = "Change Text";
+button.id = "changeTextButton";
 //Append the button to the body
 document.body.appendChild(button);
 
 
 button.addEventListener("click", function(){
     const changeTextElement = document.getElementById("myText");
-    changeTextElement.textContent ="Hello, Check!"
+    changeTextElement.textContent ="Hello, Check!";
+    button.disabled = true;
 })
 
