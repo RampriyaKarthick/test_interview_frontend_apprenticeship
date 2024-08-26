@@ -1,25 +1,26 @@
-import logo from './logo.svg';
+
 import './App.css';
+import React, { useState } from 'react';
+import Greeting from './components/Greeting';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const [name, setName] = useState('');
+
+    const handleInputChange = (event) => {
+        setName(event.target.value);
+    };
+
+    return (
+        <div className="App">
+            <input 
+                type="text" 
+                value={name} 
+                onChange={handleInputChange} 
+                placeholder="Enter your name" 
+            />
+            <Greeting name={name} />
+        </div>
+    );
 }
 
 export default App;
