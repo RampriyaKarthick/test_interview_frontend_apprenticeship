@@ -13,10 +13,11 @@ if (response.ok){
     firstFiveTodos.forEach(todo => {
         const li = document.createElement('li');
         li.textContent = todo.title;
-        unOrderedList.appendChild(li);
+        unOrderedList.appendChild(li);  //appending the list to ul unOrderedList
+        unOrderedList.id ="unOrderedList"  //id for unOrdered list
 
         const fiveTodos = document.getElementById('todo-list-container');
-        fiveTodos.appendChild(unOrderedList);
+        fiveTodos.appendChild(unOrderedList);  //appending the unOrderedList to the container
     });
 }
 else {
