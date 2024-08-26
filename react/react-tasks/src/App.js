@@ -12,9 +12,9 @@ function App() {
     };
 
     const handleSubmit = (event) => {
-      event.preventDefault(); 
-      setSubmittedName(name); 
-     setName('')
+      event.preventDefault();  //prevents the page from reloading
+      setSubmittedName(name);  //setting the name that is typed in the input form
+     setName('')   //clear the input field
   };
 
     return (
