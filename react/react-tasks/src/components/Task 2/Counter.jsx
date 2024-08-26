@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "../../styles/greeting.css"
+import "../../styles/Counter.css"
 
 function Counter() {
     //Initialising count state with default 0
@@ -23,7 +24,7 @@ function Counter() {
   return (
     <div >
     <h1 className='greeting'>Task 2 - Counter App</h1>
-    <h2>Counter : {count}</h2>
+    <h2 className="count_class">Counter : {count}</h2>
        <button onClick={incrementCounter}>Increment</button>
        <button onClick={decrementCounter}>Decrement</button>
        </div>
